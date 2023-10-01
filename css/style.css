@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container1{
+    background-color: #ebe6e6;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: auto auto auto auto auto;
+grid-template-areas: 
+"header"
+"aside"
+"article"
+"section"
+"footer";
+}
+
+header{
+grid-area: header;
+display: grid;
+grid-template-columns: 20% 60% 20%;
+grid-template-rows: 1fr;
+grid-template-areas: 
+"NavIzq Logo NavDer";
+justify-items: center;
+align-items: center;
+}
+
+header img{
+    width: 50px;
+}
+
+#Logo{
+    width: 80px;
+    grid-area: "Logo";
+}
+
+#NavIzq{
+grid-area: NavIzq;
+padding-left: 40%;
+
+}
+
+#NavDer{
+grid-area: NavDer;
+padding-right: 20%;
+}
+
+aside{
+grid-area: aside;
+justify-self: center;
+margin-top: 10%;
+}
+
+article{
+grid-area: article;
+justify-self: center;
+margin-top: 10%;
+font-size: 30px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "Despensa"
+    "Mascotas"
+    "Limpieza"
+    "Papeleria";
+    justify-content: center;
+    margin-top: 10%;
+    gap: 40px;
+}
+
+#idDespensa{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    font-size: 20px;
+
+}
+
+#idMascotas{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+#idLimpieza{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+#idPapeleria{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+section img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.NombresCategorias{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    padding: 5%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+footer{
+grid-area: footer;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+footer img {
+    width: 40px;
+}
+
+@media (min-width: 700px){
+    #container1 {
+grid-template-columns: 100%;
+grid-template-rows: auto auto auto auto auto;
+grid-template-areas: 
+"header"
+"aside"
+"article"
+"section"
+"footer";
+    }
+
+    header{
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "NavIzq Logo NavDer";
+        justify-items: center;
+        background-color: #807e7e;
+        } 
+
+footer{
+    flex-direction: row;
+}
+
+}
+
+#Logo2{
+    width: 40%;
+}
+
+#Carrito2{
+    width: 50px;
+}
+
+@media (min-width: 700px){
+    .container2{
+        background-color: #807e7e;
+    }
+}
+
+.Despensa2{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.LogoBN2{
+    width: 40px;
+}
