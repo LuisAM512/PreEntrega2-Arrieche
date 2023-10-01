@@ -1,1 +1,3 @@
 Modifico los erroes en las imagenenes de las paginas
+
+creo commit de desarrollo css
