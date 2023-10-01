@@ -1,3 +1,6 @@
 Modifico los erroes en las imagenenes de las paginas
 
 creo commit de desarrollo css
+
+ahora si creacion de rama desarrollo css
+modificacion de colores de header en categoria en CSS
