@@ -17,6 +17,10 @@ grid-template-areas:
 "footer";
 }
 
+.Fondo2{
+    background-color: #dddde0;
+}
+
 header{
 grid-area: header;
 display: grid;
@@ -148,7 +152,7 @@ grid-template-areas:
         grid-template-areas: 
         "NavIzq Logo NavDer";
         justify-items: center;
-        background-color: #b5b5b5;
+        background-color: #f8f9fa;
         } 
 
 footer{
@@ -158,24 +162,73 @@ footer{
 }
 
 #Logo2{
-    width: 40%;
+    width: 80px;
 }
 
 #Carrito2{
     width: 50px;
 }
 
-@media (min-width: 700px){
+.container2{
+    background-color:#f8f9fa;
+}
+
+@media (min-width: 992px){
     .container2{
-        background-color: #807e7e;
+        background-color: #f8f9fa;
     }
 }
 
 .Despensa2{
-    width: 40%;
+    width: 80%;
     border-radius: 10px;
 }
 
 .LogoBN2{
     width: 40px;
+}
+
+.LetraDespensa{
+    margin-top: 50px;
+    font-size: 25px;
+    
+}
+
+.LetraDespensa1{
+    margin-top: 30px;
+    font-size: 35px;
+    
+}
+
+.container6{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+@media (min-width: 992px){
+    .container5{
+        .custom-col-md-3 {
+            flex: 0 0 25%;
+            max-width: 25%;
+    }
+}
+    .LetraDespensa {
+        font-size: 35px;
+    }
+
+    .LetraDespensa1 {
+        margin-top: 30px;
+        font-size: 45px;
+    }
+
+    .container6{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+}
+#Logo2{
+    margin-top: 10px;
 }
